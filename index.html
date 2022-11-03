@@ -121,7 +121,7 @@
         function handler(e) {
             compass = e.webkitCompassHeading || Math.abs(e.alpha - 360);
             console.log(compass);
-            compassCircle.style.transform = `translate(-50%, -50%) rotate(${-compass}deg) 0.3s`;
+            compassCircle.style.transform = `rotate(${-compass}deg)`;
             document.querySelector('.degree').innerHTML(compass);
             // ±15 degree
             if (
